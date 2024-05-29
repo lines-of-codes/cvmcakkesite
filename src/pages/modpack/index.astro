@@ -1,0 +1,65 @@
+---
+import BasicLayout from "../../layouts/BasicLayout.astro";
+---
+
+<BasicLayout title="The Flavorful Modpack">
+	<header
+		class="h-[89vh] flex text-center justify-center items-center flex-col"
+	>
+		<h1>The Flavorful Modpack</h1>
+		<p>
+			A modpack that adds extra flavor into your Minecraft survival world.
+		</p>
+	</header>
+	<main>
+		<section
+			class="flex justify-between items-center px-16 py-2 bg-slate-800"
+			id="download"
+		>
+			<h1>Downloads</h1>
+			<div class="flex flex-row gap-2 mt-2">
+				<a
+					href="https://modrinth.com/modpack/the-flavorful"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						alt="modrinth"
+						height="56"
+						src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg"
+					/>
+				</a>
+				<a
+					href="https://www.curseforge.com/minecraft/modpacks/the-flavorful"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						alt="curseforge"
+						height="56"
+						src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg"
+					/>
+				</a>
+			</div>
+		</section>
+		<section
+			class="flex flex-col justify-center items-center py-16"
+			id="extradetails"
+		>
+			<h1>Extra details</h1>
+			<div class="flex flex-row gap-2">
+				<a href="license">Modpack license</a>
+				<a href="modlist">Mod list</a>
+				<a href="changelog">Changelog</a>
+			</div>
+		</section>
+	</main>
+</BasicLayout>
+
+<style>
+	header {
+		background-image: url("/modpack_darkforest.png");
+		background-size: cover;
+		background-position: center;
+	}
+</style>

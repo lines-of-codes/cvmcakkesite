@@ -1,0 +1,24 @@
+<nav class="flex justify-between px-6 py-3 fixed w-full">
+	<div class="font-bold text-lg tracking-tight" id="brand">CvmcakKeMC</div>
+	<div class="flex gap-5">
+		<a href="/" class="navlink" data-astro-prefetch>Home</a>
+		<a href="/modpack/" class="navlink" data-astro-prefetch>Modpack</a>
+	</div>
+</nav>
+<style>
+	nav {
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.5) 30%,
+			rgba(0, 0, 0, 0) 100%
+		);
+		z-index: 3;
+	}
+
+	.navlink {
+		transition: 250ms;
+		@apply font-normal;
+		@apply hover:font-bold;
+		@apply scale-100;
+		@apply hover:scale-110;
+	}
+</style>

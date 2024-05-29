@@ -1,0 +1,17 @@
+---
+import BasicLayout from "./BasicLayout.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<BasicLayout title={title}>
+	<main class="min-h-[100vh] py-16 flex justify-center items-center">
+		<div class="max-w-[80vw]">
+			<slot />
+		</div>
+	</main>
+</BasicLayout>
