@@ -4,7 +4,7 @@ import BasicLayout from "../../layouts/BasicLayout.astro";
 
 <BasicLayout title="The Flavorful Modpack">
 	<header
-		class="h-[89vh] flex text-center justify-center items-center flex-col"
+		class="h-[85vh] flex text-center justify-center items-center flex-col"
 	>
 		<h1>The Flavorful Modpack</h1>
 		<p>
@@ -13,7 +13,7 @@ import BasicLayout from "../../layouts/BasicLayout.astro";
 	</header>
 	<main>
 		<section
-			class="flex justify-between items-center px-16 py-2 bg-slate-800"
+			class="min-h-[15vh] flex flex-col md:flex-row justify-between items-center px-16 py-2 bg-slate-800"
 			id="download"
 		>
 			<h1>Downloads</h1>
@@ -48,9 +48,9 @@ import BasicLayout from "../../layouts/BasicLayout.astro";
 		>
 			<h1>Extra details</h1>
 			<div class="flex flex-row gap-2">
-				<a href="license">Modpack license</a>
-				<a href="modlist">Mod list</a>
-				<a href="changelog">Changelog</a>
+				<a href="license" class="link">Modpack license</a>
+				<a href="modlist" class="link">Mod list</a>
+				<a href="changelog" class="link">Changelog</a>
 			</div>
 		</section>
 	</main>
